@@ -1,0 +1,43 @@
+@import "../../App.scss";
+
+.scrollup {
+    position: fixed;
+    right: 2.5rem;
+    bottom: -20%;
+    
+    padding: .3rem .6rem;
+    border-radius: .4rem;
+    opacity: .8;
+
+    background-color: $title-color;
+    transition: .4s;
+    z-index: 99999;
+
+    &:hover {
+        background-color: $title-color-dark;
+    }
+
+    .scrollup__icon {
+        font-size: 1.2rem;
+        color: $container-color;
+    }
+}
+
+// Show scrollUp
+
+.show-scroll {
+    bottom: 3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .scrollup {
+        bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .scrollup {
+        right: 1rem;
+    }
+}
